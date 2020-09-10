@@ -12,6 +12,7 @@
 @interface LaunchScreenViewController ()
 @property(nonatomic,weak) NSTimer *timer;
 @property(nonatomic,strong) UIImageView *adImg;
+@property(nonatomic,strong) NSString *url;
 @end
 
 @implementation LaunchScreenViewController
@@ -57,7 +58,8 @@
 //设置启动图
 - (void)setLaunchImg:(NSString *)img :(NSString *)url{
     //NSLog(@"%@",img);
-    //NSLog(@"%@",url);
+    NSLog(@"%@",url);
+    self.url = url;
     //让代码在主线程里运行
     dispatch_async(dispatch_get_main_queue(), ^{
         UIImageView *adImg = [[UIImageView alloc]initWithImage: [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:img]]]];
@@ -74,7 +76,7 @@
 }
 //图片点击事件
 - (void)didTap{
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://www.baidu.com"]];
+    NSURL *url = [NSURL URLWithString:self.url];
     UIApplication *app = [UIApplication sharedApplication];
     //判断url是否能够跳转
     if ([app canOpenURL:url]) {
