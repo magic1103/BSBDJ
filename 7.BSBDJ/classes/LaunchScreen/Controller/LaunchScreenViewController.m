@@ -13,6 +13,7 @@
 @property(nonatomic,weak) NSTimer *timer;
 @property(nonatomic,strong) UIImageView *adImg;
 @property(nonatomic,strong) NSString *url;
+@property(nonatomic,strong) UIButton *btn;
 @end
 
 @implementation LaunchScreenViewController
@@ -20,7 +21,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor redColor];
     //self.adImg = [[UIImageView alloc]init];
     //发起请求获取数据并设置启动图
     [self getLaunchImg];
@@ -29,10 +29,6 @@
 
 
 }
-//- (void)viewDidAppear:(BOOL)animated{
-    //RootViewController *rootVc = [[RootViewController alloc]init];
-    //[self presentViewController:rootVc animated:YES completion:nil];
-//}
 //发起请求
 - (void)getLaunchImg{
         //请求地址
@@ -58,11 +54,12 @@
 //设置启动图
 - (void)setLaunchImg:(NSString *)img :(NSString *)url{
     //NSLog(@"%@",img);
-    NSLog(@"%@",url);
+    //NSLog(@"%@",url);
     self.url = url;
     //让代码在主线程里运行
     dispatch_async(dispatch_get_main_queue(), ^{
         UIImageView *adImg = [[UIImageView alloc]initWithImage: [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:img]]]];
+        adImg.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
         //设置用户与系统交互 就能使用手势
         adImg.userInteractionEnabled = YES;
         //初始化一个点击手势
@@ -70,6 +67,12 @@
         //图片添加点击事件
         [adImg addGestureRecognizer:tap];
         [self.view addSubview:adImg];
+        self.btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [self.btn setFrame:CGRectMake(300, 20, 100, 100)];
+        //self.btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+        [self.btn setTitle:@"跳过" forState:UIControlStateNormal];
+        [self.btn addTarget:self action:@selector(jump) forControlEvents:UIControlEventTouchUpInside];
+        [adImg addSubview:self.btn];
     });
 
   
@@ -84,6 +87,7 @@
         [app openURL:url options:@{} completionHandler:nil];
     }
 }
+
 //定时器访问的方法 页面倒计时
 - (void)timeChange{
     //静态变量
@@ -91,14 +95,17 @@
     //倒计时结束
     if (i == 0) {
         //跳转到主页面
-        RootViewController *rootVc = [[RootViewController alloc]init];
-        [self presentViewController:rootVc animated:YES completion:nil];
-        //销毁定时器
-        [_timer invalidate];
+        [self jump];
     }
+    //NSLog(@"%d",i);
     i--;
 }
-
+- (void)jump{
+    RootViewController *rootVc = [[RootViewController alloc]init];
+    [self.view.window setRootViewController:rootVc];
+    //销毁定时器
+    [_timer invalidate];
+}
 /*
 #pragma mark - Navigation
 
