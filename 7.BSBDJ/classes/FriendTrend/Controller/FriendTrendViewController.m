@@ -77,7 +77,7 @@
 //网络请求
 - (void)dataTask:(NSString *)userName :(NSString *)passWord{
     //请求地址
-    NSString *loginUrl = [NSString stringWithFormat:@"http://newhtrs.site.8dfish.com/api/user/login?account=%@&password=%@",userName,passWord];
+    NSString *loginUrl = [NSString stringWithFormat:@"http://newhtrs.site.8dfish.com/api/bsbdj/login?account=%@&password=%@",userName,passWord];
     NSURL *url = [NSURL URLWithString:loginUrl];
     //发送请求
     [[[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {

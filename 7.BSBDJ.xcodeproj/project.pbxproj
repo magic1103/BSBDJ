@@ -20,8 +20,14 @@
 		0403B5EB2501F87F0003FE91 /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403B5E22501F87F0003FE91 /* NewViewController.m */; };
 		0403B5EE2501FB6D0003FE91 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403B5ED2501FB6D0003FE91 /* RootViewController.m */; };
 		044F5B152506434F0096CD09 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F5B142506434F0096CD09 /* LoginViewController.m */; };
+		04A9740A250F3580003FA5A9 /* FirstTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A97409250F3580003FA5A9 /* FirstTableViewController.m */; };
+		04A97410250F3597003FA5A9 /* SecondTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9740F250F3597003FA5A9 /* SecondTableViewController.m */; };
+		04A97413250F35B6003FA5A9 /* ThirdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A97412250F35B6003FA5A9 /* ThirdTableViewController.m */; };
+		04AC262F25144239008EB212 /* TopicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC262D25144239008EB212 /* TopicTableViewCell.m */; };
+		04AC263025144239008EB212 /* TopicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AC262E25144239008EB212 /* TopicTableViewCell.xib */; };
 		04B3E8A825031F1C004FE355 /* SetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B3E8A725031F1C004FE355 /* SetTableViewController.m */; };
 		04B3E8B225032E9B004FE355 /* LaunchScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B3E8B125032E9B004FE355 /* LaunchScreenViewController.m */; };
+		04C8D1F7251087B900927F4E /* Topics.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C8D1F6251087B900927F4E /* Topics.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,10 +55,21 @@
 		0403B5ED2501FB6D0003FE91 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		044F5B132506434F0096CD09 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		044F5B142506434F0096CD09 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		04A97408250F3580003FA5A9 /* FirstTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstTableViewController.h; sourceTree = "<group>"; };
+		04A97409250F3580003FA5A9 /* FirstTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstTableViewController.m; sourceTree = "<group>"; };
+		04A9740E250F3597003FA5A9 /* SecondTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondTableViewController.h; sourceTree = "<group>"; };
+		04A9740F250F3597003FA5A9 /* SecondTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondTableViewController.m; sourceTree = "<group>"; };
+		04A97411250F35B6003FA5A9 /* ThirdTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdTableViewController.h; sourceTree = "<group>"; };
+		04A97412250F35B6003FA5A9 /* ThirdTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdTableViewController.m; sourceTree = "<group>"; };
+		04AC262C25144239008EB212 /* TopicTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopicTableViewCell.h; sourceTree = "<group>"; };
+		04AC262D25144239008EB212 /* TopicTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopicTableViewCell.m; sourceTree = "<group>"; };
+		04AC262E25144239008EB212 /* TopicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicTableViewCell.xib; sourceTree = "<group>"; };
 		04B3E8A625031F1C004FE355 /* SetTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetTableViewController.h; sourceTree = "<group>"; };
 		04B3E8A725031F1C004FE355 /* SetTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetTableViewController.m; sourceTree = "<group>"; };
 		04B3E8B025032E9B004FE355 /* LaunchScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchScreenViewController.h; sourceTree = "<group>"; };
 		04B3E8B125032E9B004FE355 /* LaunchScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchScreenViewController.m; sourceTree = "<group>"; };
+		04C8D1F5251087B900927F4E /* Topics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Topics.h; sourceTree = "<group>"; };
+		04C8D1F6251087B900927F4E /* Topics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Topics.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +177,8 @@
 		0403B5D82501F87F0003FE91 /* Essence */ = {
 			isa = PBXGroup;
 			children = (
+				04AC262B25144208008EB212 /* View */,
+				04C8D1F42510879500927F4E /* Model */,
 				0403B5D92501F87F0003FE91 /* Controller */,
 			);
 			path = Essence;
@@ -170,6 +189,12 @@
 			children = (
 				0403B5DA2501F87F0003FE91 /* EssenceViewController.h */,
 				0403B5DB2501F87F0003FE91 /* EssenceViewController.m */,
+				04A97408250F3580003FA5A9 /* FirstTableViewController.h */,
+				04A97409250F3580003FA5A9 /* FirstTableViewController.m */,
+				04A9740E250F3597003FA5A9 /* SecondTableViewController.h */,
+				04A9740F250F3597003FA5A9 /* SecondTableViewController.m */,
+				04A97411250F35B6003FA5A9 /* ThirdTableViewController.h */,
+				04A97412250F35B6003FA5A9 /* ThirdTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -234,6 +259,16 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		04AC262B25144208008EB212 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04AC262C25144239008EB212 /* TopicTableViewCell.h */,
+				04AC262D25144239008EB212 /* TopicTableViewCell.m */,
+				04AC262E25144239008EB212 /* TopicTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		04B3E8A925032841004FE355 /* Set */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +301,15 @@
 				04B3E8B125032E9B004FE355 /* LaunchScreenViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		04C8D1F42510879500927F4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04C8D1F5251087B900927F4E /* Topics.h */,
+				04C8D1F6251087B900927F4E /* Topics.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0403B5C02501F5540003FE91 /* LaunchScreen.storyboard in Resources */,
+				04AC263025144239008EB212 /* TopicTableViewCell.xib in Resources */,
 				0403B5BD2501F5540003FE91 /* Assets.xcassets in Resources */,
 				0403B5BB2501F5520003FE91 /* Main.storyboard in Resources */,
 			);
@@ -341,15 +386,20 @@
 				0403B5E52501F87F0003FE91 /* SceneDelegate.m in Sources */,
 				0403B5EB2501F87F0003FE91 /* NewViewController.m in Sources */,
 				0403B5EA2501F87F0003FE91 /* MeTableViewController.m in Sources */,
+				04AC262F25144239008EB212 /* TopicTableViewCell.m in Sources */,
+				04A9740A250F3580003FA5A9 /* FirstTableViewController.m in Sources */,
 				0403B5EE2501FB6D0003FE91 /* RootViewController.m in Sources */,
+				04C8D1F7251087B900927F4E /* Topics.m in Sources */,
 				0403B5E92501F87F0003FE91 /* EssenceViewController.m in Sources */,
 				0403B5E72501F87F0003FE91 /* AppDelegate.m in Sources */,
+				04A97413250F35B6003FA5A9 /* ThirdTableViewController.m in Sources */,
 				04B3E8B225032E9B004FE355 /* LaunchScreenViewController.m in Sources */,
 				0403B5E62501F87F0003FE91 /* main.m in Sources */,
 				044F5B152506434F0096CD09 /* LoginViewController.m in Sources */,
 				0403B5E42501F87F0003FE91 /* FriendTrendViewController.m in Sources */,
 				04B3E8A825031F1C004FE355 /* SetTableViewController.m in Sources */,
 				0403B5E82501F87F0003FE91 /* PublishViewController.m in Sources */,
+				04A97410250F3597003FA5A9 /* SecondTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

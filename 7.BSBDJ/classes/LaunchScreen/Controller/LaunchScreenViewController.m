@@ -32,7 +32,7 @@
 //发起请求
 - (void)getLaunchImg{
         //请求地址
-    NSString *url = [NSString stringWithFormat:@"http://newhtrs.site.8dfish.com/api/user/ad"];
+    NSString *url = [NSString stringWithFormat:@"http://newhtrs.site.8dfish.com/api/bsbdj/ad"];
     NSURL *adUrl = [NSURL URLWithString:url];
     //发送请求
     [[[NSURLSession sharedSession] dataTaskWithURL:adUrl completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
